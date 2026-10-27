@@ -4,10 +4,11 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { PrimerComponent } from './components/primercomponent/primercomponent';
 import { SegundoComponent } from './components/segundocomponent/segundocomponent';
+import { TercerComponent } from './components/tercercomponent/tercercomponent';
 
 @NgModule({
   declarations: [
-    App, PrimerComponent, SegundoComponent
+    App, PrimerComponent, SegundoComponent, TercerComponent
   ],
   imports: [
     BrowserModule,
