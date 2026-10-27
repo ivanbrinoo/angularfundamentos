@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NumerosEstilos implements OnInit {
-    num: any []
+    numeros: any []
     constructor() { 
-        this.num = [1, 2, 3, 4, 5, 6, 7]
+        this.numeros = [1, 2, 3, 4, 5, 6, 7]
 
     }
 

@@ -1,4 +1,10 @@
 <h1>Numeros estilos components</h1>
 <ul>
-    @if (num % 2 === 0) {}
+    @for (num of numeros; track num) {
+        @if (num % 2 === 0) {
+            <p style="color:green; font-weight:bold; font-size:20">PAR</p>
+        }@else {
+            <p style="color:red; font-weight:bold; font-size:20">IMPAR</p>
+        }
+    }
 </ul>
