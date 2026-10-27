@@ -5,15 +5,18 @@ import { App } from './app';
 import { PrimerComponent } from './components/primercomponent/primercomponent';
 import { SegundoComponent } from './components/segundocomponent/segundocomponent';
 import { TercerComponent } from './components/tercercomponent/tercercomponent';
+import { EventosComponent } from './components/eventoscomponent/eventoscomponent';
+import { DirectivasComponent } from './components/directivascomponent/directivascomponent';
+import { NumerosEstilos } from './components/numerosestiloscomponent/numerosestiloscomponent';
 
 @NgModule({
   declarations: [
-    App, PrimerComponent, SegundoComponent, TercerComponent
+    App, PrimerComponent, SegundoComponent, TercerComponent, EventosComponent, DirectivasComponent, NumerosEstilos
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+],
   providers: [
     provideBrowserGlobalErrorListeners(),
   ],
