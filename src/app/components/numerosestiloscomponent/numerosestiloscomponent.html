@@ -1,10 +1,10 @@
 <h1>Numeros estilos components</h1>
 <ul>
     @for (num of numeros; track num) {
-        @if (num % 2 == 0) {
-            <li style="color:green; font-weight:bold; font-size:20">{{num}}</li>
-        }@else {
-            <li style="color :blue; font-weight:bold; font-size:20">{{num}}</li>
-        }
+        <li [ngClass]="{
+            par: num % 2 == 0,
+            impar: num % 2 != 0
+        }">{{num}}</li>
     }
 </ul>
+<button (click)="generarNumero()">Generar nº aleatorio</button>
