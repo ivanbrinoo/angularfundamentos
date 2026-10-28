@@ -8,18 +8,24 @@ import { TercerComponent } from './components/tercercomponent/tercercomponent';
 import { EventosComponent } from './components/eventoscomponent/eventoscomponent';
 import { DirectivasComponent } from './components/directivascomponent/directivascomponent';
 import { NumerosEstilos } from './components/numerosestiloscomponent/numerosestiloscomponent';
+import { TestComponent } from './components/test-component/test-component';
+import { FormsModule } from '@angular/forms';
+import { FormSaludoComponent } from './components/form-saludo-component/form-saludo-component';
 
 @NgModule({
   declarations: [
-    App, PrimerComponent, SegundoComponent, TercerComponent, EventosComponent, DirectivasComponent, NumerosEstilos
+    App,
+    PrimerComponent,
+    SegundoComponent,
+    TercerComponent,
+    EventosComponent,
+    DirectivasComponent,
+    NumerosEstilos,
+    TestComponent,
+    FormSaludoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
