@@ -1,0 +1,6 @@
+<p>Formulario Doble</p>
+<form #formulario="ngForm">
+    Introduzca su numero: <input type="number" name="cajanumero" #cajanumero />
+    <button (click)="mostrarDoble()">Numero Doble</button>
+</form>
+<p style="color:red">{{doble}}</p>
