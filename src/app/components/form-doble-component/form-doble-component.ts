@@ -9,7 +9,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class FormDobleComponent {
   @ViewChild("cajanumero") cajanumero!: ElementRef;
   doble: number;
-numero: any;
+  numero: any;
 
 constructor() {
   this.doble = 0;
