@@ -1,0 +1,25 @@
+<h1>Formulario Numeros en un input</h1>
+<form formulario="ngForm">
+    Introduce un número: <input type="number" name="cajanumero" #cajanumero />
+    <button (click)="insertarNumero()">Numeros</button>
+</form>
+<!-- <ul>
+    @for(numero of arraynumeros; track numero){
+        @if (numero % 2 == 0){
+            <li style="color:green">{{numero}}</li>
+        }@else if (numero % 2 != 0) {
+            <li style="color:red">{{numero}}</li>
+        }
+
+        }
+</ul> -->
+<ul>
+    @for(numero of arraynumeros; track numero){
+        <li [ngClass]="{
+            positivo: numero > 0,
+            negativo: numero < 0
+        }"]>{{numero}}
+        </li>
+    }
+</ul>
+<h2 style="color:red">LLevas {{arraynumeros.length}} numeros apuntados</h2>
